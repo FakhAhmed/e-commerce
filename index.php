@@ -12,7 +12,7 @@ session_start ();
     <body>
         <h1>Bienvenue</h1>
     
-        <?php include("Front/nav.php");
+        <?php include("nav.php");
         if (isset($_SESSION['login']) && ($_SESSION['pwd'])) {
             echo "Vous êtes connecté en tant que " . $_SESSION['login'] . " !";
         } else {
