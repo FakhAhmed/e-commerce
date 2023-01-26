@@ -15,7 +15,7 @@ session_start();
     <h1>Faites votre choix parmis les meilleurs albums de tous les temps</h1>
     <br>
     <?php
-    include("../nav.php");
+    include("../e-commerce/nav.php");
 
     // Connexion a la base de données
     $bdd = "afakhfakh_bd";
