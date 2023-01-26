@@ -74,7 +74,7 @@ session_start();
         $prix = $row['prix'];
         echo "<p>Pochette de l'album :</p>";
         echo "<div class = selection>";
-        echo "<a href='selectionner.php?id=$id'><img src='../vignet.php?pochette=$pochette'></a>";  // Affichage des CDs sous forme de vignettes
+        echo "<a href='selectionner.php?id=$id'><img src='../vignette.php?pochette=$pochette'></a>";  // Affichage des CDs sous forme de vignettes
         echo "<p>Titre : $titre</p>";
         echo "<p>Auteur : $auteur</p>";
         echo "<p>Prix : $prix €</p>";
