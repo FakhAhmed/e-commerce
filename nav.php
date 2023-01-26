@@ -192,11 +192,11 @@
                </button>
                <div class='navbar-collapse offcanvas-collapse' id='navbarsExampleDefault'>
                   <ul class='navbar-nav mr-auto mb-2 mb-lg-0'>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/index.php'>Accueil</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/articles.php'>Articles</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/administrationDesArticles.php'>Administration des articles</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/panier.php'>Panier</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/deconnexion.php'>Se Déconnecter</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/index.php'>Accueil</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/articles.php'>Articles</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/administrationDesArticles.php'>Administration des articles</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/panier.php'>Panier</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/deconnexion.php'>Se Déconnecter</a></li>
                   </ul>
                </div>
             </div>
@@ -212,10 +212,10 @@
                </button>
                <div class='navbar-collapse offcanvas-collapse' id='navbarsExampleDefault'>
                   <ul class='navbar-nav mr-auto mb-2 mb-lg-0'>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/index.php'>Accueil</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/articles.php'>Articles</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/panier.php'>Panier</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/deconnexion.php'>Se Déconnecter</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/index.php'>Accueil</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/articles.php'>Articles</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/panier.php'>Panier</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/deconnexion.php'>Se Déconnecter</a></li>
                   </ul>
                </div>
             </div>
@@ -235,11 +235,11 @@
                </button>
                <div class='navbar-collapse offcanvas-collapse' id='navbarsExampleDefault'>
                   <ul class='navbar-nav mr-auto mb-2 mb-lg-0'>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/index.php'>Accueil</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/articles.php'>Articles</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/panier.php'>Panier</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/login.php'>Se Connecter</a></li>
-                     <li class='nav-item'><a class='nav-link' href='../../E-Commerce/inscription.php'>S'inscrire</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/index.php'>Accueil</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/articles.php'>Articles</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/panier.php'>Panier</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/login.php'>Se Connecter</a></li>
+                     <li class='nav-item'><a class='nav-link' href='../e-commerce/inscription.php'>S'inscrire</a></li>
 
                   </ul>
                </div>

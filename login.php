@@ -55,7 +55,7 @@ session_start();
             $_SESSION['login'] = $_POST['login'];
             $_SESSION['pwd'] = $_POST['pwd'];
             // On redirige notre visiteur vers l'accueil du site
-            header('location: ../index.php');
+            header('location: ../e-commerce/index.php');
         } else {
             // On indique a l'utilisateur que le nom d'utilisateur ou mot de passe est invalide
             echo '<body onLoad="alert(\'Membre non reconnu...\')">';
