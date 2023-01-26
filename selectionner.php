@@ -15,7 +15,7 @@ session_start();
     <h1>Description</h1>
     <br>
 
-    <?php include("nav.php");
+    <?php include("../e-commerce/nav2.php");
     // Récupérez l'ID du CD à partir de la superglobale $_GET
     if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
 

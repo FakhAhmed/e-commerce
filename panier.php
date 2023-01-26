@@ -18,7 +18,7 @@
     session_start();
 
 
-    include("../e-commerce/nav.php");
+    include("../e-commerce/nav2.php");
     // Vérifier si le panier existe dans la session
     if (isset($_SESSION['panier'])) {
         // Afficher le contenu du panier dans un tableau
@@ -58,6 +58,13 @@
         echo '<p>Le panier est vide</p>';
     }
     ?>
+    <script>
+    function changerQuantite(id, quantite) {
+
+      fetch("http://localhost/e-commerce/modifierPanier.php?id=" + id + "&quantite=" + quantite)
+      location.reload() //faire f5
+    }
+  </script>
 </body>
 
 </html>

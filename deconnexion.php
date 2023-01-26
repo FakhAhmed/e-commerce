@@ -18,10 +18,7 @@ session_destroy(); ?>
 
 <body>
     <h1>Vous êtes déconnecté</h1>
-    <p>Pour se reconnecter cliquez ici : <a href="../e-commerce/login.php">Connexion</a>
-    <p>
-    <p>Pour retourner à l'accueil cliquez ici : <a href="../e-commerce/index.php">Accueil</a>
-    <p>
+    <?php include("../e-commerce/nav2.php"); ?>
 </body>
 
 </html>

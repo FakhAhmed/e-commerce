@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <?php include("../e-commerce/nav2.php"); ?>
     <h1>Formulaire d'inscription</h1>
     <br>
     <form action="inscription.php" method="post">
@@ -55,22 +56,18 @@
         }
 
 
-        // Enregistrer l'utilisateur si c'est un administrateur
-        else if (isset($_POST['login']) && isset($_POST['pwd']) && $_POST['admin'] != "1") {
-            $query = "INSERT INTO $nomtable (login, pwd, admin) VALUES('$username', '$password', 1)";
-            $result = mysqli_query($link, $query);
-            session_start();
-            header('location: ../login.php');
-        }
-
-
-        // Enregistrer l'utilisateur si ce n'est pas un administrateur
-        else if (isset($_POST['admin']) && $_POST['admin'] == "1") {
-            // Création de l'utilisateur dans la base de données
-            $query = "INSERT INTO $nomtable (login, pwd, admin) VALUES('$username', '$password', 0)";
-            $result = mysqli_query($link, $query);
-            session_start();
-            header('location: ../login.php');
+        // Enregistrer l'utilisateur si ce n'est pas un administratuer
+        else if (isset($_POST['login']) && isset($_POST['pwd'])) {
+            if (isset($_POST['admin'])) {
+                $query = "INSERT INTO $nomtable (login, pwd, admin) VALUES('$username', '$password', 0)";
+                $result = mysqli_query($link, $query);
+                header('location: ../e-commerce/login.php');
+            } else {
+                // Création de l'utilisateur dans la base de données
+                $query = "INSERT INTO $nomtable (login, pwd, admin) VALUES('$username', '$password', 1)";
+                $result = mysqli_query($link, $query);
+                header('location: ../e-commerce/login.php');
+            }
         }
         // Fermeture de la connexion à la base de données
         mysqli_close($link);

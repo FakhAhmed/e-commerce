@@ -15,7 +15,7 @@ session_start();
     <h1>Gérer les albums</h1>
     <br>
     <h3>Ajouter un nouvel album</h3>
-    <?php include("../e-commerce/nav.php"); ?>
+    <?php include("../e-commerce/nav2.php"); ?>
     <form action='administrationDesArticles.php' method='post' enctype="multipart/form-data">
         Pochette (jpg) : <input type="file" name="pochette">
         <br>
@@ -68,7 +68,7 @@ session_start();
             // Récupération du chemin temporaire de l'image sur le serveur
             $tmp_name = $_FILES['pochette']['tmp_name'];
             // Définission du chemin où on souhaite enregistrer l'image
-            $upload_dir = '../img/' . $_FILES['pochette']['name'];
+            $upload_dir = '../e-commerce/img/' . $_FILES['pochette']['name'];
             // Déplacement de l'image du répertoire temporaire vers le répertoire de destination
             move_uploaded_file($tmp_name, $upload_dir);
 
@@ -82,7 +82,7 @@ session_start();
 
 
             // Vérifier si les champs sont remplis
-            if (empty($CheminPochette) || empty($AjouterTitre) || empty($AjouterAuteur) || empty($AjouterPrix) || empty($AjouterDescription)) {
+            if (empty($CheminPochette) || $CheminPochette =="img/"  || empty($AjouterTitre) || empty($AjouterAuteur) || empty($AjouterPrix) || empty($AjouterDescription)) {
                 // Afficher un message d'erreur
                 $error_msg = "Erreur dans l'ajout, tous les champs doivent être remplis.";
                 echo $error_msg;

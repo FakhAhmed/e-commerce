@@ -10,6 +10,7 @@ session_start();
 </head>
 
 <body>
+    <?php include("../e-commerce/nav2.php"); ?>
     <h1>Formulaire d'identification</h1>
     <br>
     <form action="login.php" method="post">
