@@ -38,7 +38,6 @@
             echo '<tr>';
             echo "<td><img src='../e-commerce/vignette.php?pochette=$article[pochette]'></td>";
             echo '<td>' . '<input type=number id="'.$article["id"].'" onchange=" changerQuantite('.$article["id"].', this.value)" name=prix value="'.$article['quantite'].'">' . '</td>';
-            echo '<td>' . $article['quantite'] . '</td>';
             echo '<td>' . $article['titre'] . '</td>';
             echo '<td>' . $article['auteur'] . '</td>';
             echo '<td>' . $article['prix'] . '€</td>';
