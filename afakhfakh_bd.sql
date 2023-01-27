@@ -90,7 +90,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`login`, `pwd`, `admin`) VALUES
 ('administrateur', 'administrateur', 0),
-('Cédric', 'Etchepare', 1);
+('ahmed', 'fakhfakh', 1);
 
 --
 -- Index pour les tables déchargées
