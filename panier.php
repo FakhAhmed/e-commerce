@@ -27,16 +27,17 @@
         echo '<table>';
         echo '<tr>';
         echo '<th>Pochette</th>';
-        echo '<th> | Quantite |</th>';
-        echo '<th>Titre | </th>';
-        echo '<th>Auteur | </th>';
-        echo '<th>Prix | </th>';
-        echo '<th>Action </th>';
+        echo '<th>Quantite</th>';
+        echo '<th>Titre</th>';
+        echo '<th>Auteur</th>';
+        echo '<th>Prix</th>';
+        echo '<th>Action</th>';
         echo '</tr>';
         $prix = 0;
         foreach ($_SESSION['panier'] as $article) {
             echo '<tr>';
             echo "<td><img src='../e-commerce/vignette.php?pochette=$article[pochette]'></td>";
+            echo '<td>' . '<input type=number id="'.$article["id"].'" onchange=" changerQuantite('.$article["id"].', this.value)" name=prix value="'.$article['quantite'].'">' . '</td>';
             echo '<td>' . $article['quantite'] . '</td>';
             echo '<td>' . $article['titre'] . '</td>';
             echo '<td>' . $article['auteur'] . '</td>';
